@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216414579862036432}
-  - component: {fileID: 8419092286689144971}
-  m_Layer: 2
+  - component: {fileID: -9210445661614028194}
+  m_Layer: 0
   m_Name: SimpleTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976523354156320879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4881275, y: 0.010959923, z: -8.498488}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8419092286689144971
+--- !u!114 &-9210445661614028194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,9 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 976523354156320879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ca997f88d84eba8c3d438926c6f8ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d728517f9fcaa194e9a00ca7cf2843c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _allowingColor: {r: 0.4509804, g: 0.8627451, b: 0.49019608, a: 0}
+  _forbiddingColor: {r: 0.6862745, g: 0.3137255, b: 0.3137255, a: 0}
 --- !u!1001 &2502616944976114606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,10 +60,6 @@ PrefabInstance:
     - target: {fileID: 1092910722396494324, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
       propertyPath: m_Name
       value: Tile Bot 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1092910722396494324, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3907522310404650416, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
       propertyPath: m_RootOrder
@@ -138,10 +136,6 @@ PrefabInstance:
     - target: {fileID: 3196648517536708714, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
       propertyPath: m_Name
       value: Tile Top 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3196648517536708714, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5114996075067899094, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
       propertyPath: m_RootOrder
@@ -274,10 +268,6 @@ PrefabInstance:
     - target: {fileID: 8410973055383580539, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
       propertyPath: m_Name
       value: Tile Decor (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8410973055383580539, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

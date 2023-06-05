@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Map : MonoBehaviour
 {    
@@ -14,9 +14,19 @@ public class Map : MonoBehaviour
         _tiles = new Tile[Size.x, Size.y];
     }
 
-    public Tile GetTile(Vector2Int index)
+    public bool IsCellAvailable(Vector2Int index)
     {
-        return _tiles[index.x, index.y];
+        // Если индекс за пределами сетки - возвращаем false
+        var isOutOfGrid = index.x < 0 || index.y < 0 || 
+                          index.x >= _tiles.GetLength(0) || index.y >= _tiles.GetLength(1);
+        if (isOutOfGrid)
+        {
+            return false;
+        }
+
+        // Возвращаем значение, свободна ли клетка в пределах сетки
+        var isFree = _tiles[index.x, index.y] == null;
+        return isFree;
     }
 
     public void SetTile(Vector2Int index, Tile tile)
